@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+  
+{% block title %}Attributions{% endblock %}
+{% block lead %}This page must show the attribution form of your project. This includes the work done by each of the student members on your team and any work that was done by people outside of your team, including the host labs, advisors, instructors, and individuals not on the team roster. This requirement is not about literature references - these can and should be displayed throughout your wiki.{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/attribution/attri-headpic.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+
+<!--
+  ======================================================================
+  == VERY IMPORTANT                                                   ==
+  ======================================================================
+  LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
+  WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
+  NOT MEETING BRONZE MEDAL CRITERION #2
+ -->
+<div class="row mt-4">
+  <script type="text/javascript">
+    // Listen to size change and update form height
+    window.addEventListener('message', function (e) {
+      const {type, data} = JSON.parse(e.data);
+      if (type === 'igem-attribution-form') {
+        const element = document.getElementById('igem-attribution-form')
+        element.style.height = data + 50 +'px'
+      }
+    });
+  </script>
+  <iframe
+    style='width: 100%'
+    id="igem-attribution-form"
+    src="https://attributions.igem.org?team=BJYUAN-CHINA&year=2023"
+  >
+  </iframe>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+</div>
+
+{% endblock %}

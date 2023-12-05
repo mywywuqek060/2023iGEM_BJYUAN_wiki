@@ -1,0 +1,195 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Education | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-contri.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+</style>
+    
+</style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+</style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">Overview</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                          <br>We hope our project may contribute to the iGEM community and help the future iGEM teams, we designed and constructed a small device for monitoring intestinal health based on butyrate microbial sensor. We also documented the parts and the construction of genetically engineered bacteria <a href = https://2023.igem.wiki/bjyuan-china/experimentbio>(Details in Biological experiments)</a>. Furthermore, we solved some difficulties in our experiments, and we hope our solutions may help for the future iGEM team. 
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">Hardware</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                          <br>In order to develop a small and quick-testing device with good sensitivity and specificity to monitor intestinal health, we designed the present device. The device includes the following modules: a determination chip, optical parts for excitation and reception of fluorescence wavelengths, a temperature control module, a display screen, a power supply, and a data input and output module. It is operated using a Raspberry Pi to perform a series of tasks. 
+                          <br>
+                          <br>The optic parts are the crucial parts that realize the function of the device. Within the optic parts, there is one light source and two optical filters. These optical filters provide the excitation wavelength (584 nm) and emission wavelength (607 nm), respectively. The mixture of genetically engineered bacteria and butyrate solution could emit fluorescence at 607 nm when excited by light of the wavelength 584 nm. Then the fluorescence could be captured and converted into electronic signals by the photoelectric sensors. After the construction of the device is done, we presented a testing process of the device. We recorded the correlation between the indications on the device and the intensity of butyrate in the form of a calibration curve, and within the range of 5.0–60 mM, the concentration of butyrate and signal linearity are well related. Data is eventually presented on the display-screen data processing module.
+                          <br>
+                          <br>In our own project, the device is used to test butyrate level. Further, our methodology of this project could also be used to monitor other short-chain fatty acids (SCFAs), such as valerate and propionate (they paly important role in maintaining intestinal homeostasis). Therefore, the biological experiments and device integration in this project may also provide an inspiration for other teams to construct devices with similar functions.
+                          <br>
+                          <br>For more specific information of the device, please move to the Experiment-hardware page or the hardware award page. 
+                          <br>
+                          <br><a href = "https://2023.igem.wiki/bjyuan-china/experimenthw">Hardware description page</a>
+                          <br>
+                          <br><a href = "https://2023.igem.wiki/bjyuan-china/hardware">Hardware awards page</a>
+                          
+                        </p>
+                    </div>
+
+                    <div class="h3">Parts</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>In this project, we provided the new composite part with butyrate recognizing promoter, pchA gene, pLEE promoter and red fluorescent protein gene. The part link is following <a href = http://parts.igem.org/Part:BBa_K4945005>(click here to view)</a>. We utilized red fluorescent protein to reflect butyrate level. By doing so, we could be able to inspire other iGEM teams to use different fluorescent proteins (like green or yellow fluorescent protein) to determine other intestinal short-chain fatty acids (such as with valerate and propionate recognizing genes). Therefore, we might be able to utilize these different proteins to detect multiple SCFAs at the same time in the chip to comprehensively reflect intestinal health.
+                        </p>
+                    </div>
+
+                    <div class="h3">Device</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>In order to optimize the sensitivity of the device, we concluded several factors that are needed to be noticed. The sensitivity depends on both the stability and the design of the device. To ensure the stability, we figured that the position of the determination chip should be strictly fixed. Besides, to ensure the vitality of the genetically engineered bacteria, the temperature should also be stable and is controlled at 37±0.1℃. High quality photoelectric sensors can ensure detection sensitivity.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                              <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/contri/stru.png"></div>
+                          </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">WIKI</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Please ensure that there are at least two programmers and one graphic/visual designer working on the wiki. Graphic design is crucial, and without a designer, the visual appeal of the wiki often depends on the minimum aesthetic standards of the programmers. What’s more, many design elements are not set in stone; the organizers have only provided a basic framework. For example, you can remove awards that are not needed, and you can add options for dry and wet teams to the menu, among other things. GitLab has a very comprehensive version control system. If your team has multiple programmers working remotely, make clever use of branches and the fork system to significantly improve work efficiency.
+                        </p>
+                        
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

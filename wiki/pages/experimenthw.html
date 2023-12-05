@@ -1,0 +1,316 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Experiment-Hardware | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-ehw.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+    </style>
+    
+    </style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+    </style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">1: Background and introduction for butyrate small device</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>It has been widely reported that butyrate content in human intestine (feces) is closely related to intestinal health. The present study aimed to develop a new small device based a microbial sensor for sensitive and quick assay of butyrate in feces, which is beneficial for monitoring intestinal health. 
+                            <br>
+                            <br>Our small device is expected to provide fast, high-throughput, low-cost, and high-sensitivity detection in different settings like clinical assay in hospital, family self-conducted DIY testing, point of care testing, and so on.
+                        </p>
+                    </div>
+
+                    <div class="h3">2: Development of the small device</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.1 Main modules of the small device</a>
+                            <br>
+                            <br>The small device includes the following modules: a determination chip with multiple chambers, optical parts for excitation and emission of fluorescence, temperature control module, display screen, power supply, optoelectronic conversion module and data processing module. Design diagram of main components in the small device is shown in Figure 1. In the wet lab the plasmid with butyrate responsive genes and red fluorescent protein (RFP) was imported into E. coli to construct a microbial sensor. Fluorescence will be generated when the genetically engineered bacteria is mixed with butyrate in samples. Then the intensity of fluorescence is recorded by the small device to achieve quantification of butyrate.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                              <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-1.png"></div>
+                            </div>
+
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.2 Design of main parts of the small device</a>
+                            <br>
+                            <br>The device utilizes fixed optical components and rotates the determination chip to sequentially detect 12 samples. The 3D module and rendering of the small device is shown in Figure 2. 
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-2-1.png"></div>
+                            </div>
+
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-2-2.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>The core principle of this device is to drive a determination chip to rotate through a stepper motor, enabling it to detect 12 samples with an optical component. The rotary structure is shown in Figure 3. The design enables rapid assay of batch samples. After detection the optical signal is converted into a digital signal using an AD converter and processed using a Raspberry Pi. Further, in order to ensure activity of the engineering bacteria, a combination of a fan and heating wire is used to keep temperature at 37±0.1℃, while a temperature sensor is also employed to maintain a constant temperature.
+                            
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-3-1.png"></div>
+                            </div>
+
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-3-2.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.3 The software of the small device</a>
+                            <br>
+                            <br>The software controls the screen to display the experiment data and it has been divided into four distinct parts. The first segment focuses on temperature monitoring, continuously displaying the device's internal temperature. The second portion is dedicated to showcasing the fluorescence content within the sample, updating it following each stepper motor operation. Additionally, the third segment keeps users informed about the program's run-time and the device's status - on or off. Finally, the fourth part estimates the time required to complete the experiment. Upon program completion, the screen provides a graphical representation of each fluorescence value within the determination chip and conducts an in-depth analysis of the results.
+                            <br>
+                            <br>Based on the usage scenario, the team has created a flowchart to clarify the required components and the workflow of the device. This helps to operate the device in a more logical manner. The flow chart is shown in Figure 4.  
+                            <div class="photos-wrapper full-width">
+                              <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/new-hifi-ehw-4.png"></div>
+                          </div>
+                        </p>
+                    </div>
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.4 Assembly of the small device by 3D printing</a>
+                            <br>
+                            <br>The small device was integrated through four main modules and the final instrument was prepared through 3D printing. The Version 1 device is shown in Figure 5. The total cost of the Demo is shown in Table 1. It is noteworthy that the small device will use components with higher precision and sensitivity on the final commercial device in the future. It will have a higher cost too. 
+                            <div class="photos-wrapper full-width">
+                              <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-5.png"></div>
+                          </div>
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                          <!DOCTYPE html>
+                          <html>
+                          <head>
+                              <title>Table 1: Table of the small device cost</title>
+                          </head>
+                          <body>
+                              <table border="1">
+                                  <caption>Table 1: Table of the small device cost</caption>
+                                  <tr>
+                                      <th>Components</th>
+                                      <th>Cost ($)</th>
+                                  </tr>
+                                  <tr>
+                                      <td>Determination chip</td>
+                                      <td>80</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Raspberry Pi</td>
+                                      <td>35</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Photosensitive sensor</td>
+                                      <td>1</td>
+                                  </tr>
+                                  <tr>
+                                      <td>LED light</td>
+                                      <td>1</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Stepper motor</td>
+                                      <td>8</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Bluetooth</td>
+                                      <td>4</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Display screen</td>
+                                      <td>10</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Wireless mouse keyboard</td>
+                                      <td>10</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Thermistor</td>
+                                      <td>2</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Heating wire</td>
+                                      <td>1</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Cooling fan</td>
+                                      <td>3</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Buzzer</td>
+                                      <td>2</td>
+                                  </tr>
+                                  <tr>
+                                      <td>AD converter</td>
+                                      <td>1</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Total</td>
+                                      <td>158</td>
+                                  </tr>
+                              </table>
+                          </body>
+                          </html>
+                          
+                        </p>
+                    </div>
+
+                    <div class="h3">3: The application of the small device for detecting butyrate</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>In order to quantify the real sample, a calibration curve should be constructed. 180 μL of engineering bacteria solution at logarithmic phase is added into the chamber of detection chip and cultured at 37℃. A series of known concentrations of sodium butyrate standard solutions are prepared. 20 μL of each standard solution is added into the detection chip with the final concertation of 5, 10, 20, 40, 60 mM. After incubating at 37℃ for 30 min, the digital signal on the display screen of the device is recorded. The digital signal (Y) is then subjected to linear regression analysis with sodium butyrate concentration (X). The equation of the calibration curve is Y=0.9928X+51.195, with an R2 of 0.9923. The graph of the curve is shown in Figure 5. According to the calibration curve, the butyrate level in unknown samples could be calculated. 
+                            <br>
+                            <div class="photos-wrapper full-width">
+                              <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ehw/hifi-ehw-6.png"></div>
+                          </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">4: Results and discussion</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>In this part, we successfully developed a small device based on a butyrate microbial sensor for determining the butyrate level in samples. All the parts of the small device (Version 1) could work well. In the future, we will improve sensitivity of photoelectric sensor, increase the sample numbers of determination chip to develop Version 2 device. Further, large quantity of clinical samples (such as feces sample) from healthy individuals and patients with intestinal diseases should be collected and quantified. The butyrate level will be compared between the healthy and unhealthy, and then intestinal health might be monitored according to accumulated clinical data.
+                        </p>
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

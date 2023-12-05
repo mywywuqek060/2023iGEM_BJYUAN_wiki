@@ -1,0 +1,214 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Software | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-sw.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+</style>
+    
+</style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+</style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">Software Overview</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/sw/f1.png"></div>
+                            </div>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/sw/f2.png"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">Raspberry Pi Integration and Data Presentation</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>We insert the Raspberry Pi into the device and develop software to present various data on the screen. This program offers insights into the device's temperature, the fluorescence intensity within the sample, and additionally calculates butyrate level by referencing a calibration curve.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/sw/f3.png"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">Four Distinct Software Segments</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>The software controls the screen to display the experiment data and it has been divided into four distinct parts. The first segment focuses on temperature monitoring, continuously displaying the device's internal temperature. The second portion is dedicated to showcasing the fluorescence content within the sample, updating it following each stepper motor operation. Additionally, the third segment keeps users informed about the program's run-time and the device's status - on or off. Finally, the fourth part estimates the time required to complete the experiment. Upon program completion, the screen provides a graphical representation of each fluorescence value within the determination chip and conducts an in-depth analysis of the results.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/newui.png"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">Temperature Control and Monitoring</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>The software could also control the temperature inside the device by monitoring the temperature sensor and using the fans to spread the heat made by the heating resistance to ensure the temperature is in a constant range. It diligently maintains this value with precision down to 0.1 degrees to ensure the determination is in a stable state.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/sw/f5.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">Precise Stepper Motor Control</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Furthermore, the software could also provide accurate control of the stepper motor to rotate in a scheduled degree and precisely aim the fluorescent excitation port. After the stepper motor drives the determination chip under the launch port, the software could control it launching the fluorescence which the wavelength is 584/607. Then, the sensor will detect the fluorescent intensity, transcribe it into an electric signal from the illumination signal, and store it in the Raspberry Pi memory for further analysis.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/sw/f6.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">Fluorescence Excitation and Data Analysis</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>After analyzing all the samples inside the determination chip, each data stored in the memory model on the Raspberry Pi will start to combine together, analyze in a formula, and display a graph automatically, to determine the relationship between the fluorescence intensity and the butyrate level.
+                        </p>
+                    </div>
+
+                
+
+                    <div class="h3">User-Friendly Operation</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>All these designs allow people to operate this device easily; operators only need to plug the preprocessed determination chip and press the start button, leaving the device to complete the experiment automatically.
+                        </p>
+                    </div>
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}
+

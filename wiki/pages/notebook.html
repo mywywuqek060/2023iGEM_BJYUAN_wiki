@@ -1,0 +1,546 @@
+{% extends "layout.html" %}
+
+{% block title %}
+NoteBook | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-note.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+
+<!--本地覆盖scrollbar的颜色-->
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+</style>
+
+<!--本地覆盖sidebar的颜色-->
+ <style>
+.indexbutton {
+    display: none !important;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 0;
+    height: 62px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #000000 !important;
+    z-index: 21;
+    transition: 0.5s;
+}
+</style>
+
+</style>
+
+<!--本地覆盖sidebar的位置-->
+<style>
+.sideBlock {
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    margin: 200px 32px 0 4vw;
+    transform: translateY(-175px) !important;
+    
+    min-width: 220px;
+    max-width: 350px;
+}
+</style>
+
+
+
+</body>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">5.12</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> with PI and instructor, confirmed research topic on using butyrate to determine intestinal health
+                        </p>
+                    </div>
+
+                    <div class="h3">5.19</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> with all student members, shared background knowledge from intestinal health and gene modification 
+                        </p>
+                    </div>
+
+                    <div class="h3">5.22</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> with PI and instructor, understood the methods of inserting the genes into the plasmid using enzyme cutting and linkage
+                        </p>
+                    </div>
+
+                    <div class="h3">6.1</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> lab technicians and gastroenterologists, learned the basic protocols of lab safety and requirements for monitoring intestinal health
+                        </p>
+                    </div>
+                    
+                    <div class="h3">6.19</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> with and instructor, developed the preliminary design of the device
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.3</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph"><a>Team meeting</a> with device expert, determined the basic functions and operating environment of the device
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.24 - Insertion of RFP (678bp)</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">Lab tour, learned to use lab equipment
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.20 - Lab tour</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">Lab tour, learned to use lab equipment
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.22 - Experiment preparations</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                                                         -   Prepared liquid (1% NaCl, 1% peptone, 0.5% yeast extract, desired volume of deionized water) and solid LB mediums (1% NaCl, 1% peptone, 0.5% yeast extract, 1.5% agarose, desired volume of deionized water)
+                                                 <br>
+                                                 <br>    -	 Sterilized the mediums with autoclave, added 1 ‰ benzylpenicillin Amp into the solid mediums
+                                                 <br>
+                                                 <br>    -	 Turned the mediums upside-down, cooled off the mediums then stored at 4℃ 
+                            
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.24 - Insertion of RFP (678bp)</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <a>Enzyme cutting</a> 
+                            <br>
+                            <br>-   Added 10μL gene, 7μL sterile water, 2μL Buffer 2.1, 0.5μL EcoRI and 0.5μL SpeI
+                            <br>
+                            <br>-   Added 10μL gene, 7μL sterile water, 2μL Buffer 2.1, 0.5μL EcoRI and 0.5μL Xbal
+                            <br>
+                            <br>-   Sealed PCR tube, placed at 37℃ for 2h
+                            <br>
+                            <br><a>Electrophoresis</a>
+                            <br>
+                            <br>-	Added 25mL 1×TAE buffer solution with 0.25g agarose
+                            <br>
+                            <br>-	Heated for 2min, then added 2.5μL Genecolor
+                            <br>
+                            <br>-	Poured in gel cast and cooled off for 20min
+                            <br>
+                            <br>-	Placed gel in electrophoretic chamber and added 3μL of marker in first and last pore
+                            <br>
+                            <br>-	Added 1/5 of plasmid volume of 6×DNA Loading Buffer with plasmid, then injected into the pores of the gel
+                            <br>
+                            <br>-	Ran the gel under 110v for 35min
+                            <br>
+                            <br>-	Placed gel in gel imager for observation
+                            <br>
+                            <br><a>Gel DNA extraction</a>
+                            <br>
+                            <br>-	Cut the gel with DNA and placed in centrifugal tube, added 3 times the volume of gel of buffer DE-A
+                            <br>
+                            <br>-	Heated in water bath to melt the gel
+                            <br>
+                            <br>-	Transferred the solution into DNA preparation tube, centrifuged with 12000rpm for 1min and removed the waste liquid
+                            <br>
+                            <br>-	Added 500μL buffer W1, centrifuged with 12000rpm for 1min and removed the waste liquid
+                            <br>
+                            <br>-	Added 500μL buffer W1, centrifuged with 12000rpm for 30s and removed the waste liquid
+                            <br>
+                            <br>-	Added 500μL buffer W2, centrifuged with 12000rpm for 1min and removed the waste liquid
+                            <br>
+                            <br>-	Centrifuged with 12000rpm for 1min and removed the waste liquid
+                            <br>
+                            <br>-	Added 30μL of deionized water, placed in room temperature for 1min
+                            <br>
+                            <br>-	Centrifuged with 12000rpm for 1min, collected the plasmid in the centrifugal tube
+                            <br>
+                            <br><a>Enzyme linkage</a>
+                            <br>
+                            <br>-	Added 2μL 5×buffer, 0.4μL T4 DNA ligase, 2μL vector, 6μL target gene
+                            <br>
+                            <br>-	Placed in water in room temperature for 24h
+                        </p>
+                    </div>
+                    
+                    <div class="h3">7.25 - Plasmid conversion and cultivation</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>-	Added 50μL of sensory receptor cells with 5μL of plasmids, placed in ice for 20min allowing the DNA to adhere to the cell membrane
+                            <br>
+                            <br>-	Transformation using heat shock in 42℃ bath for 45s, placed in ice for 2min
+                            <br>
+                            <br>-	Added 500μL of liquid medium, placed in shaker at 37℃ for 1h
+                            <br>
+                            <br>-	Centrifuged with 7000rpm for 30s
+                            <br>
+                            <br>-	Removed 400μL of liquid above the bacteria and mixed the bacteria with the remaining liquid
+                            <br>
+                            <br>-	Added the bacteria onto the solid mediums, placed at 37℃ for 12h
+                            <br>
+                            <br>Result: <a>Partial success. </a>
+                            <br>
+                            <br>2 out of 6 solid mediums successfully grew bacterial colonies
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-725.png"></div>
+                            </div>
+                            <a>Modification:</a> increased heat shock time to 90s
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="h3">7.26 - Plasmid Cultivation</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>-	Picked the bacterial colonies from the solid mediums
+                            <br>
+                            <br>-	Injected the bacteria into the liquid mediums, placed in shaker at 37℃ for 12h
+                        </p>
+                    </div>
+
+                    <div class="h3">7.27</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>-	Placed CP3 absorption column in collecting tube, added 500μL balance buffer BL, centrifuged with 12000rpm for 1min, then removed the buffer
+                            <br>
+                            <br>-	Added 2mL bacteria into centrifugal tube, centrifuged with 12000rpm for 1 min and removed the supernatant, repeat the process above
+                            <br>
+                            <br>-	Added 250μL P1 solution (with RNaseA) with bacteria sediment, mixed using pipette, then added P2 solution and flipped centrifugal tube gently for 8 times
+                            <br>
+                            <br>-	Added 350μL P3 solution and flipped centrifugal tube gently for 8 times to remove protein
+                            <br>
+                            <br>-	Centrifuged with 12000rpm for 10min, transferred supernatant into CP3 absorption column
+                            <br>
+                            <br>-	Centrifuged CP3 absorption column with 12000rpm for 1min, removed supernatant
+                            <br>
+                            <br>-	Added 600μL PW rinse (with pure alcohol), centrifuged with 12000rpm for 1min, removed supernatant
+                            <br>
+                            <br>-	Repeated the process above
+                            <br>
+                            <br>-	Centrifuged CP3 absorption column with 12000rpm for 2min, removed supernatant
+                            <br>
+                            <br>-	Placed CP3 absorption column into centrifugal tube, added 80μL deionized water, placed in room temperature for 2min
+                            <br>
+                            <br>-	Centrifuged with 12000rpm for 2min, collected the plasmid in the centrifugal tube
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br><a>Success.</a> RFP was successfully inserted into vector (lanes 1, 2, 3, 5, 3400 bp approx.)
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-727.png"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">8.16 - Determination chip design completed</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-816.png"></div>
+                            </div>
+                            <br>12 chambers for rapid assays, connected to middle chamber with tunnels for wastewater collection and disposal.
+                            <br>
+                            <br>Assessment result: <a>Approved</a>
+                        </p>
+                    </div>
+
+                    <div class="h3">8.17 - First model of device design completed</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-817.png"></div>
+                            </div>
+                            <br>Assessment result: <a>Unapproved</a> (rotating optic components were unreliable, weak seal of device causes interference, no output components)
+                        </p>
+                    </div>
+
+                    <div class="h3">8.19 - Insertion of pLee promotor (297bp) trial 1 </div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+                        </p>
+                    </div>
+
+                    <div class="h3">8.20</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Fail</a>. PLee promotor failed to insert into vector
+                            <br>
+                            <br><a>Modification</a>: increased the ratio of vector to pLee promotor from 1:3 to 1:5
+
+                        </p>
+                    </div>
+
+                    <div class="h3">8.21 - Insertion of pLee promotor (297bp) trial 2</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup with modification
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+                        </p>
+                    </div>
+                    
+                    <div class="h3">8.22</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Success</a>. pLee was successfully inserted into vector
+                        </p>
+                    </div>
+
+                    <div class="h3">8.23 - Insertion of pPchA and PchA (803bp) trial 1</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup with modification
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+                        </p>
+                    </div>
+
+                    <div class="h3">8.24</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Fail</a>. pPchA and PchA failed to insert into vector
+                            <br>
+                            <br><a>Modification</a> increased the ratio of vector to pPchA and PchA from 1:3 to 1:5
+                        </p>
+                    </div>
+
+                    <div class="h3">8.25 - Insertion of pPchA and PchA (803bp) trial 2</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup with modification
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+                        </p>
+                    </div>
+
+                    <div class="h3">8.26</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Fail</a>. pPchA and PchA failed to insert into vector
+                            <br>
+                            <br><a>Modification</a>: increased the ratio of vector to pPchA and PchA from 1:5 to 1:7
+                        </p>
+                    </div>
+
+                    <div class="h3">8.27 - Insertion of pPchA and PchA (803bp) trial 3</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup with modification
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+
+                        </p>
+                    </div>
+                    
+                    <div class="h3">8.28</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Partial success</a>. 1 out of 6 groups of pPchA and PchA was successfully inserted into vector
+                            <br>
+                            <br><a>Modification</a>: increased enzyme linkage time from 24h to 36h
+                        </p>
+                    </div>
+                    
+                    <div class="h3">8.29 - Insertion of pPchA and PchA (803bp) trial 4</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of enzyme cutting, electrophoresis, gel DNA extraction, and enzyme linkup with modification
+                            <br>
+                            <br>Repeated process of plasmid cultivation on solid mediums
+                        </p>
+                    </div>
+                    
+                    <div class="h3">8.30</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Repeated process of plasmid cultivation in liquid mediums
+                            <br>
+                            <br>Repeated process of plasmid extraction
+                            <br>
+                            <br>Repeated process of electrophoresis
+                            <br>
+                            <br>Result: <a>Success</a>. pPchA and PchA was successfully inserted into vector
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-830.png"></div>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="h3">9.2 - Determination chip production completed</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-92.png"></div>
+                            </div>
+
+                        </p>
+                    </div>
+
+                    <div class="h3">9.15</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>Team meeting</a> with gastroenterologists and device experts, discussed improvements for device, including optic pathway design, temperature control, and chip replacement design
+                        </p>
+                    </div>
+
+                    <div class="h3">9.16 - Second model of device design completed</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-916.png"></div>
+                            </div>
+                            <br><a>Modifications</a>: fixed optic parts, changed chip replacement method from drawer to lid to ensure seal, added a screen for data output
+                            <br>
+                            <br>Assessment result: <a>Approved</a>, authorized for production
+                        </p>
+                    </div>
+
+                    <div class="h3">9.28 - Device production (version 1.0) completed</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Ran tests using sodium butyrate solutions with known concentration
+                            <br>
+                            <br>Results: <a>Success</a>. There is a strong correlation between the displayed data from the device and the actual concentration of the solutions
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-928-1.png"></div>
+                            </div>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-928-2.png"></div>
+                            </div>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/notebook/hifi-n-928-3.png"></div>
+                            </div>
+
+                        </p>
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

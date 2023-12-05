@@ -1,0 +1,212 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Background | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/description-head.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+    </style>
+    
+    </style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+    </style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">Background</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>A large number of people around the world suffer from intestinal diseases, particularly intestinal inflammation. The intestinal inflammation refers to intestinal inflammatory reaction caused by various reasons such as microbial infection, ischemia, radiation or immune imbalance. The incidence of intestinal inflammation is about 20% of the population in China, and gradually increases with age, so that this disease is quite common in the elderly over 50 years old<a href="#cit1" class="citation">[1]</a> . The clinical manifestations of intestinal inflammation mainly include abdominal pain, diarrhea, bloody stools, fever, etc. In severe cases, it may cause dehydration and electrolyte disturbance and even becomes life-threatening, since it may largely increase the risk of intestinal cancer<a href="#cit1" class="citation">[2]</a>. Therefore, it is important to monitor intestinal health and detect intestinal inflammation as early as possible. 
+                        </p>
+                    </div>
+
+                    <div class="h3">Part I: Existing methods for detecting intestinal diseases</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>There are several available methods for detecting intestinal diseases, but those methods all have their own disadvantages, for example, in terms of efficiency, price, patient psychology, etc<a href="#cit3" class="citation">[3]</a>. 
+                            <br>
+                            <br><a>Fecal examination:</a> White blood cells and red blood cells can be found in the faces of patients with infectious intestinal inflammation through conventional fecal examination, and a positive occult blood test indicates gastrointestinal bleeding. This examination is helpful for the preliminary diagnosis of the patients’ etiology. However, the sensitivity and specificity of this method are not high.
+                            <br>
+                            <br><a>Blood biochemistry:</a> By detecting indicators such as routine blood cells count, electrolytes, total serum protein, C-reactive protein, and erythrocyte sedimentation rate, it is possible to know the patients’ infection with pathogens as well as the presence of anemia and other inflammatory activity. However, like the fecal examination method, the sensitivity and specificity of this method are also not high.
+                            <br>
+                            <br><a>X-ray barium meal examination:</a> Double contrast barium examination is often used to observe the functional status of the entire gastrointestinal tract and determine whether there are organic lesions. However, this method is usually not the first choice for diagnosing intestinal inflammation due to its radioactivity, and only used as an alternative examination method for patients who are not suitable for endoscopic examination.
+                            <br>
+                            <br><a>CT or MRI:</a> CT or MRI examination method can show the inflammatory changes in intestinal wall, the location and extent of the lesion, and the presence of intestinal dilation and stenosis. This method is particularly useful in emergency, while it has a certain degree of radioactivity and the instruments are very expensive.
+                            <br>
+                            <br><a>Endoscopy:</a> Endoscopic examination can determine whether there are inflammations, ulcers, bleeding, and other lesions by visual observation of the intestinal mucosa, and conclude whether the patient has intestinal inflammation. However, this method is invasive and thus has poor compliance, which prevents its wide application.
+                            <br>
+                            <br>The available methods above all have obvious shortcomings and are unsuitable for the early diagnosis of intestinal inflammation. Therefore, there is an urgent unmet need for a method to monitor intestinal health and diagnosing intestinal inflammation at its early stage when pathological manifestations are not obvious<a href="#cit4" class="citation">[4]</a>. Also, a small portable device with high sensitivity, specificity and low cost are crucially necessary. It is expected to be easily used in hospital by medical testing staff, or at home by people conveniently in the future.  
+                        </p>
+                    </div>
+
+                    <div class="h3">Part II: Butyrate and intestinal health</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Butyrate is a small fatty acid containing four carbon atoms or a salt thereof, which has anti-inflammatory and anti-cancer properties in the intestine <a href="#cit5" class="citation">[5]</a>. It has been widely reported that butyrate
+                            is source of energy for colon cells, and it can promote intestinal mucosal synthesis and intestinal cell proliferation, differentiation, and maturation <a href="#cit6" class="citation">[6]</a>. Butyrate plays an important role in maintaining intestinal health, immune regulation, gene expression regulation, etc<a href="#cit7" class="citation">[7]</a>. The anti-inflammatory effect of butyrate may be achieved by reducing gene mutations in intestinal epithelial cells, thereby reducing the cancer risk; and by inhibiting the growth of colon cancer cells and inducing their apoptosis. Therefore, the successful detection of butyrate may play a crucial role in the early screening of intestinal inflammation. 
+                            <br>
+                            <br>A lot of academic passages we found have identified an important feature of the intestinal flora structure in patients with enteritis as a reduction in the butyrate-producing bacteria (BPB) taxa, and the butyrate content is significantly decreased compared with that of healthy people<a href="#cit8" class="citation">[8]</a>. Some paper reported that patients with active and inactive Crohn's disease (CD) had reduced butyrate-synthetic capacity in their gut microbiota, indicating a potential link between CD and alterations in butyrate metabolism. Some academic studies found that active Ulcerative colitis (UC) patients also showed reduced butyrate-synthetic capacity<a href="#cit9" class="citation">[9]</a>. 
+                            <br>
+                            <br>We can conclude that butyrate levels are closely related to gut health. When there is an abnormality, disorder, or disease in the intestine, the amount of butyrate in the intestine is reduced. We can try to quickly determine the health conditions of the gut by studying butyrate levels. Based on the research we have done, we began an experimental study to determine the gut health of the butyrate response and develop a small device for butyrate determination.
+                        </p>
+                    </div>
+
+                    <div class="h3">Part III: The yield of this project</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>The aim of this study is to establish a microbial sensor that can respond to butyrate. We will place the microbial sensor in a multi-chamber chip; use the detection chip as a detection module; and combine the optical circuit module, photoelectric conversion sensor, temperature control module, etc. We do this to integrate a portable detection device for butyrate and combine the butyrate working curve, which can calculate the content of butyrate in the sample. 
+                        </p>
+                    </div>
+
+                    <div class="h3">Part IV: The contribution of the project</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            Due to the disadvantages of present butyrate methods and other intestinal disease detecting methods, we want to build this biosensor device to achieve home intestinal health detection, so that the detection method is faster, cheaper, and more convenient, and make up for the shortcomings of other methods. We focus on solving the disadvantages of large sample requirements, susceptibility to false-positive results, the expensive price of some detection instruments, and unfavorable to rapid on-site detection. In the future, we may further improve the device to detect precisely. Based on a large amount of clinical data collection (butyrate level in human feces), we can compare the butyrate level difference between healthy individuals and patients. We are expecting to provide a convenient and sensitive instrument for monitoring intestinal health.
+                        </p>
+                    </div>
+
+                    <div class="references">
+                        <h3>References</h3>
+                        <ol>
+                             <li id="cit1">Yuan, Jing. (2016). Medicine for treating enteritis. 
+                             <li id="cit2">Charbel, Chater A, Saudemont P, et al. Journal of visceral surgery, 2019,156(2):175
+                             <li id="cit3">Brett K Ritchie, David R Brewster, Geoffrey P Davidson, et al. Pediatrics, 2009,124(2):620
+                             <li id="cit4">Nakwon Hwang, Taekil Eom, Sachin K Gupta, et al. Genes (Basel), 2017, 8(12):350
+                             <li id="cit5">Qu R, Zhang Y, Ma Y, et al. Adv Sci (Weinh), 2023,10(23): e2205563
+                             <li id="cit6">Sivaprakasam S, Prasad PD, Singh N. Pharmacol Ther. 2016,164:144
+                             <li id="cit7">Hodgkinson K, El Abbar F, Dobranowski P, et al.Clin Nutr,2023,42(2):61
+                             <li id="cit1">Emilio J Laserna-Mendieta, Adam G Clooney, Julián F Carretero-Gomez, et al. J Crohns Colitis, 2018, 12(2):204
+                             <li id="cit1">Lin Zhang, Chudan Liu, Qingyan Jiang, et al. Trends Endocrinol Metab. 2021, 32(3):159
+                             
+                    </div>
+
+                    
+
+<!--None-->
+</div>
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

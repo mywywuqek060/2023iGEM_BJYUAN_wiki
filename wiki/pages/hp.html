@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+
+{% block title %}
+HumanPractice | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-hp.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+    </style>
+    
+    </style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+    </style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">I: Overview</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>BJYUAN-CHINA's Project name is A small device based on a butyrate microbial sensor for monitoring intestinal health. During the process of project establishment, implementation, and enhancement we received help from medical and device experts, etc., their advice was useful in our experimental process.
+                        </p>
+                    </div>
+
+                    <div class="h3">II: During the project initiation</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Our project team members wanted to focus on research in the area of intestinal health. Gastroenterologists from the hospital were invited to have a brainstorming session (picture 1) to find out what are the urgent needs for gut health testing in the clinic. We learned that at the moment, early monitoring of intestinal health, especially enteritis, is important to prevent it from developing into a serious disease. The current test methods have some disadvantages.
+                            <br>
+                            <br>Therefore, there is an urgent need to find better methods to monitor intestinal health. Based on these inspirations, our team read literature and found that butyrate is closely related to intestinal health and its content may be able to be used to detect intestinal health.
+                            <br>
+                            <br>We discussed the results of literature research with digestive experts in the second meeting. Experts believed that butyrate has a good effect on intestinal epithelial cells, which contributes to intestinal health. 
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hp/hp1.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">III: During project implementation and enhancement</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>During the biology experiment, we discussed with the biology expert again during the construction of the butyrate sensor. The biology experts emphasized the need for sensitive butyrate measurement methods for future clinical use, and reliable measurement, high-throughput testing, etc. In the experiments, we tried to optimize the experimental conditions in the construction of the butyrate microbial sensor, including the conditions for plasmid restriction enzyme ligation, ensuring that the target gene is inserted into the plasmid. We have also optimized the PCR amplification conditions for target genes, noting that the ratio of genes to vectors is important, and an appropriate ratio can ensure successful gene insertion.
+                            <br>
+                            <br>We have designed 12-chamber chip so that multiple samples can be measured in one assay, improving the detection speed and facilitating clinical testing. 
+                        </p>
+                    </div>
+
+                    <div class="h3">IV: Future applications of the small device based on a butyrate microbial sensor for monitoring intestinal health</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>After constructing the butyrate biosensor, we reported and discussed with gastrointestinal specialists again. But current research has not yet reached the level of being applicable to human samples
+                            <br>
+                            <br>Gastrointestinal experts remind that in the future, many clinical samples must be collected to scientifically utilize the role of butyrate in intestinal health testing, in order to be used for clinical testing in the future. 
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hp/fixed-2.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">V: Users</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Throughout the project, we ended up focusing the development of the butyric acid, the construction of biosensors and their use in instruments. Prior to this, we interviewed a total of 30 people in the squad members' schools and the squad members' parents, asking questions:
+                            <br>
+                            <br>1. do you occasionally feel intestinal discomfort;
+                            <br>
+                            <br>2. how often you go to the hospital when you feel sick;
+                            <br>
+                            <br>3. how receptive they would be to a convenient home-based gut health test kit.
+                            <br>
+                            <br>When collecting the results, we found that people often experience intestinal discomfort and most of them do not have time to go to the hospital for systematic checkups due to their busy work or study schedules. Therefore, our team has decided to first design a butyrate biosensor that can reflect intestinal health, and in the future, design a home testing kit as evidence for people to test whether they need to go to a hospital for more professional treatment when they feel uncomfortable.
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">VI: Community</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>In conducting the program, we recognized the importance of gut health and found that many people have a very shallow understanding of it. Therefore, our team publicized the knowledge of gut health by opening a WeChat public account and putting up posters in the school respectively.
+                            <br>
+                            <br>In conclusion, this project got help throughout the biological experiments and future practical application by organizing many meetings with digestive tract experts. It will benefit for the future applications of the project.
+                        </p>
+                    </div>
+
+                    
+          
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

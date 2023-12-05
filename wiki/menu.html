@@ -1,0 +1,99 @@
+<!-- 以下是老板的要求 -->
+
+<!--
+
+我觉得我们主要做的网页：
+1) Home 
+2) Team (2部分 A-Members B-Attribution）。 
+3) Project (5部分，含有A-Contibution B-Background C-Experiment-Bio D-Experiment-Devicce E-Notebook )。
+4) HP (2部分，含有A-Integrated-HP B-HumanPractice)
+5) Software
+6) Education
+
+-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+  <div class="container">
+
+    <!-- TEAM NAME -->
+    <a class="navbar-brand" href="#" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 20px; font-weight: bold; margin-right: 50px;">BJ-YUAN</a> <!-- 调整字体大小为 20px -->
+
+    <!-- SMALL SCREEN MENU ICON -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto" style="margin-top: 20px; margin-left: 50px;">
+
+        <!-- Home -->
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link" href="{{ url_for('home') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Home</a> <!-- 调整字体大小为 16px -->
+        </li>
+
+        <!-- Team -->
+        <li class="nav-item dropdown" style="margin-right: 30px;">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;"> <!-- 调整字体大小为 16px -->
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black; max-height: 500px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Members</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Attributions</a></li>
+          </ul>
+        </li>
+
+        <!-- Project -->
+        <li class="nav-item dropdown" style="margin-right: 30px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProject" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;"> <!-- 调整字体大小为 16px -->
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownProject" style="background-color: black; max-height: 500px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Contribution</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Description</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Engineering</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='experimenthw') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Experiment - Hardware</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Notebook</a></li>
+          </ul>
+        </li>
+
+        <!-- HPs -->
+        <li class="nav-item dropdown" style="margin-right: 30px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHP" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;"> <!-- 调整字体大小为 16px -->
+            Human Practice
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownHP" style="background-color: black; max-height: 500px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Integrated - HP</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='hp') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Human Practice</a></li>
+          </ul>
+        </li>
+
+        <!-- Safety -->
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link" href="{{ url_for('pages', page='safety') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Safety</a>
+        </li>
+
+        <!-- Hardware -->
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link" href="{{ url_for('pages', page='hardware') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Hardware</a>
+        </li>
+
+        <!-- Software -->
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link" href="{{ url_for('pages', page='software') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Software</a>
+        </li>
+
+        <!-- Education -->
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link" href="{{ url_for('pages', page='education') }}" style="font-family: 'Copperplate Gothic', sans-serif; color: white; font-size: 16px; font-weight: bold;">Education</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown-item:hover {
+    border: 1px solid white;
+    background-color: black;
+  }
+</style>

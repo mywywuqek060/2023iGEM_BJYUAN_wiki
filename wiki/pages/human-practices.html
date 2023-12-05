@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Integrated-HumanPractice | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-ihp.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+    </style>
+    
+    </style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+    </style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">Integrated Human Practice</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Based on our interest in synthetic biology, members of the BJ-YUAN team conducted mass amount of research and discussions, hoping that the outcome of our project would be beneficial for the society on monitoring health. The name of our project is A small device based on a butyrate microbial sensor for monitoring intestinal health. Throughout the project, we studied large numbers of articles and communicated with experts to ensure our design is reliable. During the execution, unanticipated problems occurred and were solved to improve our project. Identifying and solving difficulties, and interacting experts at all stages of our research created a closed-loop process.     
+                        </p>
+                    </div>
+
+                    <div class="h3">I: Project preparation/establishment phase</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>1.1 Choosing the topic</a>
+                            <br>
+                            <br>According to our survey at school and reading literature on PUMED and CNKI, we discovered that many people suffer from intestinal health problems. After our team discussion, we decided to focus on the topic of intestinal health monitoring. A review of the articles noted out that butyrate levels in the intestine are closely related to intestinal health, and that butyrate favors the proliferation and differentiation of intestinal cells, which is beneficial to maintain intestinal homeostasis. Butyrate levels are significantly lower in patients with enteritis and other intestinal diseases. Most articles suggest that butyrate may be considered as a biomarker for intestinal health detection, yet no clinical methods or devices on monitoring intestinal health using butyrate exist on the current market.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/choosing-the-topic.jpg"></div>
+                            </div>
+                            
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>1.2 Discussing the topic with clinical experts</a>
+                            <br>
+                            <br>To certify our ideas, we invited gastrointestinal experts from the hospital for a brainstorming meeting. After discussion, we have learned that early monitoring of intestinal health, especially enteritis, is important to prevent the transition to serious diseases, such as bowel carcinoma. The existing clinical testing methods include fecal examination, blood biochemical examination, CT/MRI examination, etc. However, the detection methods above have drawbacks such as low sensitivity, poor specificity, expensive instrument prices, long detection time, and poor patient compliance. Butyrate could be a potential biomarker for monitoring intestinal health.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/discussing-the-topic-with-clinical-experts.jpg"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>1.3 Brainstorming the device design with device experts</a>
+                            <br>
+                            <br>Based our survey and reviewing butyrate testing methods, we discovered that many testing devices were too large, too expensive, and required trained personnel to operate. We came to the idea of a method using synthetic biology to construct a biosensor responsive to butyrate to reduce the testing price. Meanwhile, there are no portable instruments in hospitals or at home to monitor intestinal health using butyrate. To validate our idea of creating a new device, we invited a device expert for consultation. We brainstormed and learned about the crucial components needed in our device. We also confirmed the requirements for our device, including sensitive, lightweight, convenient, and high throughput analysis.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/brainstorming-the-device-design-with-device-experts.jpg"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">II: Project execution phase</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.1 Design and preparation of butyrate biosensors</a>
+                            <br>
+                            <br>During biological experiments, we constructed biosensors responsive to butyrate by introducing fluorescent proteins and butyrate recognition genes into E. coli to obtain a genetically engineered bacterium. Throughout our experiment, we accidentally realized that the butyrate responsive gene was difficult to be introduced into the plasmid, and many attempts failed or fell short of expectations. After discussing with experts on details of the experiment and reading the articles again, we changed the ratios of genes to vectors, and the plasmid was finally successfully constructed (see section of biology experiment description). In addition, gastrointestinal experts provided further advice on the biosafety of our project and the sensitivity of the assay.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/design-and-preparation-of-butyrate-biosensors.jpg"></div>
+                            </div>
+
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.2 Preparation of the small device</a>
+                            <br>
+                            <br>During the preparation of the small device, four modules were designed, including a determination chip with multiple chambers, optical parts for excitation and emission of fluorescence, temperature control module, display screen, power supply, optoelectronic conversion module and data processing module. The monitoring chip contains genetically engineered bacteria which emit florescence when placed with butyrate, and the fluorescence is optoelectronic converted onto a display screen. In our tests of the device, we discovered that the placement of the chip interferes the detection. According to the problems in the experiment, we consulted with device experts. The device experts suggested that the chip should be easy to replace in accordance with clinical needs, and that the position of the optical path should be improved to ensure detection sensitivity. We redesigned the device so the chip could be removed from above without affecting the optical path. The structure of the internal devices was optimized to make the device more portable. The first-generation device
+                            was produced by 3D printing.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/preparation-of-the-small-device.jpg"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">III: Project improvement phase</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>We communicated with the experts again in the construction of the butyrate microbial sensor. The gastrointestinal experts again emphasized the need or future clinical use of butyrate assays to be sensitive and accurate. Based on these suggestions, we managed to optimize the incubation conditions of genetically engineered bacteria and butyrate. We also discussed with device experts and decided to improve the sensitivity of the sensor to ensure sensitive detection. We are now processing the second-generation device. It will be completed in mid-October, 2023.
+                        </p>
+                    </div>
+
+
+                    <div class="h3">IV: Exchange of feedback from different teams</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>On August 20th, 2023, we communicated with members of the BIT-China and BIT teams. We received valuable feedback on improving design details on our device, such as the position of the power button and control keyboard, and obtained feedback on methods to introduce our significance of our project. We also received advice on schedule management and experiment planning. 
+                        </p>
+                        <div class="photos-wrapper full-width">
+                            <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ihp/exchange-of-feedback-from-different-teams.jpg"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="h3">Summary</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Our project focuses on intestinal health as a social requirement. Research was made, experiments were conducted, unforeseen problems were identified, and solutions were made by discussions with experts and reviewing articles. Research on our device also collected suggestions from device experts and feedback from fellow schoolmates, as well as communication with other iGEM teams to promote future development. We hope our project will have the opportunity to be used in fields in monitoring human intestinal health.
+                        </p>
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

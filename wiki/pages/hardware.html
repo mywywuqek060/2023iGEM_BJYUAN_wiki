@@ -1,0 +1,340 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Education | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/head-hw.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+</style>
+    
+</style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+</style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+                    <div class="h3">I: Overview & Background</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Based on scientific documents, a large number of people around the world suffer from intestine diseases, including intestine inflammation and cancer. It has been widely reported that butyrate levels in the intestine are closely associated with intestinal health. Butyrate might be a potential biomarker for monitoring intestine health. Early diagnosis could prevent the development of more severe intestinal diseases. Available clinical methods for examination for intestinal disease, such as fecal examination, blood biochemistry, and CT/MRI examination, are not sensitive enough, invasive, time-consuming, or expensive. It is crucial to develop a small and quick-testing device with good sensitivity and specificity to monitor intestinal health. Based on literature reviews and clinical expert consultation, the BJ-YUAN team aimed to design a useful small device, which is more sensitive, convenient, and portable to monitor intestinal health at a lower cost. During the development process of this project, through reviewing literature, consulting device experts, and collecting feedback, we gradually improved our device from the primary design to construction of the first generation and the second generation.
+                            
+                        </p>
+                    </div>
+
+
+                    <div class="h3">II: Design of the small device (zero-generation)</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>The zero-generation device was designed to include the following modules: a determination chip, optical parts for excitation and reception of fluorescence wavelengths, a temperature control module, a display screen, a power supply, and a data input and output module. It is operated using a Raspberry Pi to perform a series of tasks. These modules were the primary design of the zero-generation. The blueprint of the device and its modules are shown below in Figure 1. The device expert in the field suggested us to change the position of the determination chip instead of the optic parts to enable the light path to aim at the chip easily when the chip turns.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f1.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">III: Development of the first-generation device </div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>According to the suggestions of the experts, we developed the first-generation device based on the design of the zero-generation. The functions and structures were explained below.
+                            
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.1 The determination chip</a>
+                            <br>
+                            <br>The genetically engineered bacteria and samples are added to the chambers of the chip. The chip is designed with a diameter of 7cm and a thickness of 10.5mm. The central part of the chip is made translucent for the transmission of fluorescence light produced by the bacteria. The chip could be turned slowly each time by the stepping motor for sample detection.
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.2 The temperature control module</a>
+                            <br>
+                            <br>The temperature control module is composed of two separate and cooperating parts: the temperature monitoring module (by a temperature sensor) and the temperature controlling module. These two modules maintain a constant temperature for detection.
+
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.3 The optical parts and optoelectronic sensors</a>
+                            <br>
+                            <br>Within the optic parts, there is one light source and two optical filters. These optical filters provide the excitation wavelength (584 nm) and emission wavelength (607 nm), respectively.
+                            The mixture of genetically engineered bacteria and butyrate solution could emit fluorescence at 607 nm when excited by light at 584 nm. Then the fluorescence could be captured and converted into electronic signals by the photoelectric sensors. Data is eventually presented on the display-screen data processing module. The 3D model of the first-generation device is shown below in Figure 2.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f2-1.png"></div>
+                            </div>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f2-2.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.4 The data processing module </a>
+                            <br>
+                            <br>The Raspberry Pi was inserted into the device, and software was developed to present various data. This program offers insights into the device's temperature, and the fluorescence content within the sample, and additionally calculates the butyrate level by referencing a calibration curve. The module has been divided into four distinct parts when linked to an additional laptop. The first segment focuses on temperature monitoring, continuously displaying the device's internal temperature. The second portion is dedicated to showcasing the fluorescence content within the sample, updating it following each stepper motor operation. Additionally, the third segment keeps users informed about the program's runtime progress and the device's status—on or off. Finally, the fourth part estimates the time required to complete the experiment. The details can be found on the WIKI page “Software Section”. The functional process of the device is shown in Figure 3. The cost of the modules of the first-generation device is shown in Table 1. 
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f1.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <!DOCTYPE html>
+<html>
+<head>
+    <title>Table 1. Cost of first-generation device</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Table 1. Cost of first-generation device</caption>
+        <tr>
+            <th>Components</th>
+            <th>Cost ($)</th>
+        </tr>
+        <tr>
+            <td>Determination chip</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Raspberry Pi</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Photosensitive sensor</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>LED light</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Stepper motor</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Bluetooth</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Display screen</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Wireless mouse keyboard</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Thermistor</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Heating wire</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Cooling fan</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Buzzer</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>AD converter</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>158</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+                    
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.5 The application of the first-generation device & feedback</a>
+                            <br>
+                            <br>We made the first-generation device through 3D printing, and the device was shown in Figure 4. The genetically engineered bacteria within the logarithmic phase were incubated with a series of concentrations of sodium butyrate solution to validate that the first-generation device could work well. The results showed that within the range of 5.0–60 mM, linear relation of butyrate concentration (x) and signal (y) was good (y=0.9928x+51.195, R2=0.9923).
+                            <br>
+                            <br>During consultation with clinical and device experts, they advised that for future clinical applications, we still have to increase the sensitivity of photoelectric sensor. Our teammates and classmates provided some advice concerning the appearance, keyboard position, and operation interface and so on.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f4-1.png"></div>
+                            </div>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f4-2.png"></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="h3">IV: Development of second-generation device  </div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>Based on the above advice, we developed the second-generation device. In this device, we replaced the current photoelectric sensor with better sensitivity, Rearranged the internal structure, changed keyboard position, constructed a better interface. The second-generation device has already gone through 3D printing construction and the second-generation device was shown below in Figure 5. The detection of butyrate is not yet completed.
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/hw/hw-f5-1.png"></div>
+                            </div>
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">V: Future Improvements</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>After the development of the second-generation device, we consulted with experts again. In the future, a large quantity of clinical samples (such as feces) from healthy individuals and patients with intestinal diseases should be collected and quantified. The butyrate level will be compared between the healthy and unhealthy, and then intestinal health might be monitored according to accumulated 
+                            <br>
+                            <br>We soon realized that merely two rounds of iteration are certainly not enough for a product. Due to the time constraint, we are not able to perfect our product, but there are still several possible advances that could improve our device.
+                            <br>
+                            <br>We could further reduce the cost of the device and make it more affordable. For example, instead of using the Raspberry Pi as a processor, we could produce processors that are simpler, cheaper, and more specialized in function. We can design mobile APP for easier use of this device. 
+
+                        </p>
+                    </div>
+
+                    <div class="h3">VI: Instructions for Use</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br> In order to make it more convenient for people to use this device, we are planning to write the user's manual. In the meantime, we are also consulting market experts for the commercialization of our device. It is expected that this device could benefit for health purposes.
+                            
+                        </p>
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

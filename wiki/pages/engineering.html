@@ -1,0 +1,652 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Experiment-Biology | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 在垂直方向居中 */
+    overflow: auto; /* 显示图片容器的滚动条 */
+
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+  }
+
+</style>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/header-for-all.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/team-description-v2.png" alt="001" class="scroll-content" style="width: 100%; height: auto;">
+</div>
+
+<head>
+<!--这部分定义了全部 删了就都没了-->
+<!--css样式表1-->
+<!--这是一个clearout，没有任何规定具体的元素-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/clearout&amp;action=raw&amp;ctype=text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--css样式表2-->
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/menuOverlay&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+<!--这部分应该是滚轴的-->
+<body>
+    <div id="fixedOverlay" bg="none">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+                <div id="scrollbar-container">
+                    <div id="scrollbar"></div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </div>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/menuOverlay&amp;action=raw&amp;ctype=text/javascript"></script>
+<style>
+    #scrollbar-container {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#scrollbar {
+    background: #000000 !important;
+}
+
+
+</style>
+</body>
+
+<!--本地覆盖sidebar的颜色-->
+<style>
+    .indexbutton {
+        display: none !important;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding: 16px 0;
+        height: 62px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #000000 !important;
+        z-index: 21;
+        transition: 0.5s;
+    }
+    </style>
+    
+    </style>
+    
+    <!--本地覆盖sidebar的位置-->
+    <style>
+    .sideBlock {
+        text-transform: uppercase;
+        float: left;
+        margin-left: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 200px 32px 0 4vw;
+        transform: translateY(-175px) !important;
+        
+        min-width: 220px;
+        max-width: 350px;
+    }
+    </style>
+
+<!--可以理解为相机位置-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/CSS/ContentPage&amp;action=raw&amp;ctype=text/css" />
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/SmoothScroll&amp;action=raw&amp;ctype=text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/fonts.css&amp;action=raw&amp;ctype=text/css" />
+</head>
+
+
+<body>
+<!--这部分是左侧栏目标题突出部分 非常厉害 我们本地覆盖一下-->
+<!--再写一行注释突出下面-->
+    <script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:Vilnius-Lithuania/JS/ContentPageIndex&amp;action=raw&amp;ctype=text/javascript"></script>
+</body>
+</p><p>
+
+<!--下面内容都是正文部分 根据需求修改即可-->
+<body>
+    <main id="section-text">
+        <input id="headingTitleText" type="hidden" value="" />
+        <div class="contentBlock">
+            <div class="content">
+                <div>
+
+                    <div class="h3">Background and introduction for butyrate small device</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>It is well-known that butyrate benefit for intestine hemostasis. Currently few determination methods for butyrate in bio-samples are available. Some methods are time-consuming and depend on expensive analytical instruments (such as GC-MS method). It is necessary to develop a new sensitive and quick method for butyrate assay. The biological experiment section of this project supplies a butyrate microbial sensor for butyrate quantification. The plasmid with butyrate recognizing promoter, pchA, pLEE promoter and red fluorescent protein gene were constructed and then inserted into E coli to make butyrate microbial sensor. The details were described in the following experimental procedure.
+                        </p>
+                    </div>
+
+
+                    <div class="h3">1: Preparing Lysogeny Broth (LB) medium</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>
+                            LB liquid medium was prepared by 1% NaCl, 1% peptone, 0.5% Yeast extract and deionized water. LB solid medium was prepared by 1% NaCl, 1% peptone, 0.5% yeast extract, 1.5% agarose and deionized water. Above medium were sterilized at 121℃ for 20 min. The LB liquid medium was kept in 4℃. When the solid medium cooled to 60℃, Ampicillin (Amp) was added into the solid medium in clean bench. After mixing, the LB solid medium was poured into petrie dish and were kept in 4℃ after solidifying. 
+                        </p>
+                    </div>
+
+                    <div class="h3">2: Empty plasmid expansion</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>2.1 Transformation</a>
+                            <br>
+                            <br>5 μL of empty plasmid (empty plasmid PUC57, Sango Biotech Company, Shanghai, China) was added into centrifuge tube with 50 μL of DH5α in clean bench. After mixing, the centrifuge tube was put on ice for 30 min and then was heated in 42℃ water bath for 90 s. After that, the tube was put on ice for 2 min and 500 μL of LB liquid medium was added. Then the tube was cultured at 37℃ shaker oscillator for 1 h. The 100 μL of bacteria suspension was coated on the LB solid medium. The solid medium was cultured at 37℃ for 12h. Single colonies were picked into LB liquid medium (containing 1‰ Amp). The bacterial fluid was cultured at 37℃ oscillator for 12 h.
+                            <br>
+                            <br><a>2.2 Preservation of plasmid and bacteria</a>
+                            <br>
+                            <br>700 μL of bacteria suspension and 700 μL of glycerol was added into 1.5 mL EP tubes in clean bench. After thorough mixing, the bacteria were preserved. 2 mL of bacteria suspension was centrifugated at 12000 rpm for extracting empty plasmid. 
+                            <br>
+                            <br><a>2.3 Plasmid extraction</a>
+                            <br>
+                            <br>The TIANprep Mini Plasmid Kit (Cat. no. 4992423/4992420, TIANGEN Biotech, Beijing, China) was used for extracting plasmid. The extraction process followed the TIANprep Mini Plasmid Kit Handbook (https://www.tiangen.com/content/details_40_16610.html). The main extraction steps included balance of absorption column CP3, RNA removal, bacterial lysis, protein removal, rinse and plasmid collection. Finally, the empty plasmid was collected.  
+                            <br>
+                            <br><a>2.4 Agarose gel electrophoresis</a>
+                            <br>
+                            <br>The agarose gel electrophoresis was used for verify the plasmid size. The operation steps of agarose gel electrophoresis referred to the Book-《synthetic biology》(Science Press, First Edition, February 2010). After the samples and marker Ⅲ DNA Ladder (Marker Ⅲ DNA Ladder, Beijing Solarbio Tech Ltd Corp) were added to the corresponding loading well, the electrophoresis started (DYCP-31E Agarose electrophoresis instrument, Beijing Liuyi BioTech Ltd Corp, Beijing, China). The voltage was set at 110 V and the electrophoresis was run for 35 min. Then the gel was observed in Bio-Rad ChemiDoc XRS+ Chemiluminescence Imaging System (Bio-Rad, CA, US). 
+                            <br>
+                            <br><!DOCTYPE html>
+<html>
+<head>
+    <title>Table 2: Reaction system</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Table 2: Reaction system</caption>
+        <tr>
+            <th>Mix</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <td>Taq PCR Mix (2x)</td>
+            <td>25 μL</td>
+        </tr>
+        <tr>
+            <td>Primer Mix</td>
+            <td>2 μL</td>
+        </tr>
+        <tr>
+            <td>Template</td>
+            <td>2 μL</td>
+        </tr>
+        <tr>
+            <td>ddH2O</td>
+            <td>21 μL</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">3: Inserting the mRFP gene</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.1 The amplification of mRFP gene </a>
+                            <br>
+                            <br>The primers of mRFP (shown in Table 1) were synthesized by Sango Biotech Company, Shanghai, China. The reaction system and program were listed in Table 2 and 3.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 1: The primers of mRFP</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 1: The primers of mRFP</caption>
+                                    <tr>
+                                        <th>Gene Name</th>
+                                        <th>Primer</th>
+                                        <th>5′-3′ sequence</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">RFP</td>
+                                        <td>up</td>
+                                        <td>GTTTCTTCGAATTCGCGGCCGCTTCTAGAGATGGC<br>TTCCTCCGAAGACGT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>down</td>
+                                        <td>GTTTCTTCCTGCAGCGGCCGCTACTAGTATTAAGC<br>ACCGGTGGAGTGAC</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 2: Reaction system</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 2: Reaction system</caption>
+                                    <tr>
+                                        <th>Mix</th>
+                                        <th>Volume</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Taq PCR Mix (2x)</td>
+                                        <td>25 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primer Mix</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Template</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ddH2O</td>
+                                        <td>21 μL</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 3: PCR proceeding</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 3: PCR proceeding</caption>
+                                    <tr>
+                                        <th>Process</th>
+                                        <th>Temperature (°C)</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Predenaturation</td>
+                                        <td>95</td>
+                                        <td>2.5 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Denaturation</td>
+                                        <td>95</td>
+                                        <td>15 s</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Annealing</td>
+                                        <td>63</td>
+                                        <td>30 s</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extension</td>
+                                        <td>72</td>
+                                        <td>11 min</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            <br>
+                            
+                            
+                            
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.2 Enzyme-cut</a>
+                            <br>
+                            <br>The Enzyme-cut system of plasmid and target gene was listed in Table 4. The PCR tube was mixed and kept at 37 ℃ for 3 h.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 4: The Enzyme-cut system of plasmid and target gene</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 4: The Enzyme-cut system of plasmid and target gene</caption>
+                                    <tr>
+                                        <th>Enzyme-cut system of plasmid</th>
+                                        <th></th>
+                                        <th>Enzyme-cut system of target gene</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Plasmid</td>
+                                        <td>10 μL</td>
+                                        <td>Target gene</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Buffer</td>
+                                        <td>2 μL</td>
+                                        <td>Buffer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EcoRI</td>
+                                        <td>0.5 μL</td>
+                                        <td>EcoRI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XbaI</td>
+                                        <td>0.5 μL</td>
+                                        <td>SpeI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ddH2O</td>
+                                        <td>7 μL</td>
+                                        <td>ddH2O</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            
+                            
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            
+                            <br><a>3.3 Agarose gel electrophoresis </a>
+                            <br>
+                            <br>The agarose gel electrophoresis method was used for verify whether the enzyme-cut was successful. The process was the same as the Section 2(4). 
+                            <br>
+                            <br><a>3.4 Gel extraction</a>
+                            <br>
+                            <br>The target gel was cut and put into the 1.5 mL of tube and melted in 75 ℃ water bath. The TIANgel Midi Purification Kit was used for gel extraction. The operation was conducted by the instruction (https://www.tiangen.com/content/details_40_21362.html). Briefly, the main procedure included melting gel, gel recovery, desalination and gel recovery again. Finally, the target gene was obtained. 
+                            <br>
+                            <br><a>3.5 Genes linked by enzyme</a>
+                            <br>
+                            <br>The Enzyme-linked system in Table 5 was used. The system was mixed and kept at room temperature for 24 h. After empty plasmid and mRFP gene were linked, the new plasmid (marked as the Plasmid Ⅰ) was obtained.
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 5: Enzyme-linked system for Plasmid I</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 5: Enzyme-linked system for Plasmid I</caption>
+                                    <tr>
+                                        <th>Mix</th>
+                                        <th>Volume</th>
+                                    </tr>
+                                    <tr>
+                                        <td>5× buffer</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T4 DNA Ligase</td>
+                                        <td>0.4 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plasmid</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mRFP gene</td>
+                                        <td>6 μL</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>3.6 Transformation</a>
+                            <br>The above Plasmid Ⅰ was transformed into bacteria as the Section 2.1.
+                            <br>
+                            <br><a>3.7 Preservation of Plasmid I and bacteria</a>
+                            <br>
+                            <br>The method was conducted as the Section 2.2. The Plasmid Ⅰ and bacteria were kept at -80℃. 
+                            <br>
+                            <br><a>3.8 Verification of plasmid size</a>
+                            <br>
+                            <br>The size of Plasmid I was verified following the method for plasmid extraction (Section 2.2) and agarose gel electrophoresis (Section 2.3).
+                           
+                        </p>
+                    </div>
+
+                    <div class="h3">4:Inserting the pLEE gene</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>4.1 The amplification of pLEE gene </a>
+                            <br>
+                            <br>The primers of pLEE (shown in Table 6) were synthesized by Sango Biotech Company, Shanghai, China. The reaction system and program were listed in Table 2 and 3. The reaction system and PCR process were almost the same as the Section 3.1. The only difference was that the number of primers were 1μL and the annealing temperature was 63℃. Finally, the target gene was obtained.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 6: The primers of pLEE</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 6: The primers of pLEE</caption>
+                                    <tr>
+                                        <th>Gene Name</th>
+                                        <th>Primer</th>
+                                        <th>5′-3′ sequence</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">pLEE</td>
+                                        <td>up</td>
+                                        <td>GTTTCTTCGAATTCGCGGCCGCTTCTAGAGTTAAC<br>GAGATGATTTTCTTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>down</td>
+                                        <td>GTTTCTTCCTGCAGCGGCCGCTACTAGTAAAGCTGA<br>ATGTMATGGACTTG</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            
+                            
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>4.2 Enzyme-cut, agarose gel electrophoresis and gel extraction</a>
+                            <br>
+                            <br>The enzyme-cut system was the same as the Section 3.2. The agarose gel electrophoresis method was used for verify whether the enzyme-cut was successful. The process was the same as the section 2.4. The process of gel extraction was the same as the Section 3.4.
+                            <br>
+                            <br><a>4.3 Genes linked by enzyme</a>
+                            <br>
+                            <br>The Enzyme-linked system in Table 7 was used. The system was mixed and kept at room temperature for 24 h. After Plasmid I and pLEE gene were linked, the new plasmid (marked as the Plasmid Ⅰ) was obtained.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 7: Enzyme-linked system for Plasmid II</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 7: Enzyme-linked system for Plasmid II</caption>
+                                    <tr>
+                                        <th>Mix</th>
+                                        <th>Volume</th>
+                                    </tr>
+                                    <tr>
+                                        <td>5× buffer</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T4 DNA Ligase</td>
+                                        <td>0.4 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plasmid I</td>
+                                        <td>1.3 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pLEE gene</td>
+                                        <td>6.7 μL</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>4.4 Transformation and preservation of plasmid and bacteria</a>
+                            <br>
+                            <br>The Plasmid Ⅱ was transformed into bacteria as the Section 2.1. The process was conducted as the Section 2.2. The method was conducted as the Section 2.2. The Plasmid II and bacteria were kept at -80℃.  
+
+                            
+                        </p>
+                    </div>
+
+                    <div class="h3">5 Inserting the pPchA and PchA gene</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>5.1 The amplification of pPchA and PchA gene </a>
+                            <br>
+                            <br>The primers of pPchA and PchA (shown in Table 8) were synthesized by Sango Biotech Company, Shanghai, China. The reaction system and program were listed in Table 2 and 3. The reaction system and PCR process were almost the same as the Section 3.1. The difference was that the primer mix to template was 1:7 and the annealing temperature was 65℃. Finally, the target gene was obtained.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 8: The primers of pPchA and PchA</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 8: The primers of pPchA and PchA</caption>
+                                    <tr>
+                                        <th>Gene Name</th>
+                                        <th>Primer</th>
+                                        <th>5′-3′ sequence</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">pPchA and PchA</td>
+                                        <td>up</td>
+                                        <td>GTTTCTTCGAATTCGCGGCCGCTTCTAGAGCAC<br>AGGAATATATCCGTACC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>down</td>
+                                        <td>GTTTCTTCCTGCAGCGGCCGCTACTAGTATTA<br>GCATTTTTTTGACCGCG</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>5.2 Enzyme-cut, agarose gel electrophoresis and gel extraction</a>
+                            <br>
+                            <br>The enzyme-cut system was the same as the Section 3.2. The agarose gel electrophoresis method was used for verify whether the enzyme-cut was successful. The process was the same as the section 2.4. The process of gel extraction was the same as the Section 3.4.
+                            <br>
+                            <br><a>5.3 Genes linked by enzyme</a>
+                            <br>
+                            <br>The Enzyme-linked system in Table 9 was used. The system was mixed and kept at room temperature for 24 h. After Plasmid II and pPchA and PchA gene were linked, the new plasmid (marked as the Plasmid ⅠII) was obtained.
+                            <br>
+                            <br><!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Table 9: Enzyme-linked system for Plasmid III</title>
+                            </head>
+                            <body>
+                                <table border="1">
+                                    <caption>Table 9: Enzyme-linked system for Plasmid III</caption>
+                                    <tr>
+                                        <th>Mix</th>
+                                        <th>Volume</th>
+                                    </tr>
+                                    <tr>
+                                        <td>5× buffer</td>
+                                        <td>2 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T4 DNA Ligase</td>
+                                        <td>0.4 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plasmid III</td>
+                                        <td>1 μL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pPchA and PchA gene</td>
+                                        <td>7 μL</td>
+                                    </tr>
+                                </table>
+                            </body>
+                            </html>
+                            
+                        </p>
+                    </div>
+
+                    
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br><a>5.4 Transformation and preservation of plasmid and bacteria</a>
+                            <br>
+                            <br>The Plasmid Ⅱ was transformed into bacteria as the Section 2.1. The process was conducted as the Section 2.2. The method was conducted as the Section 2.2. The Plasmid III and bacteria were kept at -80℃. 
+                            <br>
+                            <br><a>5.5 Validation of genetically engineered bacteria</a>
+                            <br>
+                            <br>The 180 μL of engineering bacteria solution at logarithmic phase was added into 96-well plate and cultured at 37℃. A series of known concentrations of sodium butyrate standard solutions were prepared. 20 μL of each standard solution was added into the well with the final concertation of 5, 10, 20, 40, 60 mM. After incubating at 37℃ for 30 min, the fluorescence intensity was recorded by Biotek Cytoation5 Cell Imaging Microporous Plate Detector (Instrument BioTek Bergen, USA). The fluorescence intensity (Y) was then subjected to linear regression analysis with sodium butyrate concentration (X).
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="h3">6 Results and Discussion</div>
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            <br>6.1 According to the above experimental sections, plasmid extraction and agarose gel electrophoresis were performed on the plasmid III. It was detected that the size of plasmid III was approximately 4500bp, which was in line with the expected size (Figure 1, the successful lanes). Finally, the Plasmid III was usefully constructed. The plasmid profile was shown in Figure 2.
+                            <br>
+                            <br>During the experiments, some experimental conditions should be addressed. The heat shock time was set as 90 sec to increase the transformation efficiency. During PCR experiment for pLEE gene, when the annealing temperature was set at 62 ℃, but there were many unexpected bands in gel electrophoresis map. When the annealing temperature was increased to 62 ℃ and the primer concentration was reduced, good results were obtained.  Enzyme cut time was extended, to ensure sufficient enzyme cut. We have found it was more difficult to link pLEE gene and the ratio of plasmid to gene was increased t 1:5, better result was acquired.
+                            <br>
+                            <div class="photos-wrapper full-width">
+                                <div class="photos photo-grid one-part no-shadow"><img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/ebio/hifi-ebio-1.png"></div>
+                        </p>
+                    </div>
+
+                    <div class="fit-together right">
+                        <p class="content-paragraph">
+                            6.2 The engineering bacteria was validated to respond with butyrate, the engineering bacteria was incubated with butyrate solution. A calibration curve was plotted and the equation of the calibration curve was Y=23.36X+10927, with an R2 of 0.9984. Y was florescence intensity and C was the concentration of sodium butyrate. This result indicated genetically engineered bacteria responsive to butyrate was successful constructed.
+                            
+                        </p>
+                    </div>
+
+<!--None-->
+</div>        
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--none-->
+
+{% endblock %}

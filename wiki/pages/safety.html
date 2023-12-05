@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Safety | BJ-YUAN
+{% endblock %}
+
+{% block page_content %}
+<style>
+  /* 添加伪元素来处理背景模糊效果 */
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/puregrey.png");
+    filter: blur(10px); /* 背景模糊效果 */
+    z-index: -1; /* 将伪元素置于背景之后 */
+  }
+
+  html, body, .container-fluid {
+    margin: 0; /* 去除默认的边距 */
+    padding: 0; /* 去除默认的内边距 */
+    height: 100%; /* 确保html, body, .container-fluid 的高度都是 100% */
+    width: 100%; /* 确保 .container-fluid 的宽度始终等于视口的宽度 */
+    overflow: hidden; /* 隐藏浏览器滚动条 */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 让图片占满屏幕的宽度 */
+    justify-content: flex-start; /* 在垂直方向居中 */
+    width: 100vw;
+    height: 100vh;
+    overflow: auto; /* 显示图片容器的滚动条 */
+    scrollbar-width: thin; /* 火狐浏览器的滚动条样式 */
+    scrollbar-color: black lightgray; /* 火狐浏览器的滚动条样式 */
+    box-sizing: border-box; /* 边框宽度包含在width内 */
+    background-size: cover; /* 确保背景图片始终覆盖整个容器 */
+  }
+
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/puregrey.png");
+    filter: blur(10px); /* 背景模糊效果 */
+    z-index: -1; /* 将伪元素置于背景之后 */
+  }
+
+  .image-container::-webkit-scrollbar {
+    width: 10px; /* 谷歌浏览器的滚动条样式 */
+  }
+
+  .image-container::-webkit-scrollbar-track {
+    background: lightgray; /* 谷歌浏览器的滚动条样式 */
+  }
+
+  .image-container::-webkit-scrollbar-thumb {
+    background: black; /* 谷歌浏览器的滚动条样式 */
+  }
+
+  .image-container img {
+    display: block;
+    margin: 0 auto; /* 将图片水平居中对齐 */
+    vertical-align: top; /* 设置垂直对齐方式为顶部，消除图片之间的空隙 */
+    width: 100%; /* 设置图片宽度为80% */
+    height: auto;
+    max-height: 100vh; /* 图片最大高度为视口高度 */
+    object-fit: cover; /* 让图片按比例填充容器，不留出空白 */
+    filter: blur(10px); /* 初始设置为模糊 */
+    transition: filter 1s; /* 模糊到清晰的过渡时间 */
+  }
+</style>
+<div class="image-container">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-header.png" alt="000" class ="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-01.png" alt="001" class="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-02.png" alt="002" class="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-03.png" alt="003" class="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-04.png" alt="004" class="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/safety/s-05.png" alt="005" class="scroll-content">
+    <img src="https://static.igem.wiki/teams/4945/wiki/wiki-please-do-not-do-anything-with-this-folder/finalfix/fix-2.png" alt="006" class="scroll-content">
+
+</div>
+</div>
+<script>
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // 如果元素进入视口，清除模糊效果
+        entry.target.style.filter = 'blur(0)';
+      } else {
+        // 如果元素离开视口，增加模糊效果
+        entry.target.style.filter = 'blur(10px)';
+      }
+    });
+  }, {
+    // 当元素进入视口的 10% 时，触发回调函数
+    threshold: 0.1
+  });
+
+  // 监听所有带有 'scroll-content' 类的元素
+  document.querySelectorAll('.scroll-content').forEach(function(element) {
+    observer.observe(element);
+  });
+
+  // 定义全局缩放大小
+  var zoomWidth = 100;
+
+  // 监听鼠标滚轮事件
+  window.addEventListener('wheel', function(event) {
+    // 检查是否按住了 Ctrl 键
+    if (!event.ctrlKey) {
+      return;
+    }
+  
+    // 阻止浏览器默认的缩放行为
+    event.preventDefault();
+  
+    // 获取 .image-container img 的 DOM 对象
+    var images = document.querySelectorAll('.image-container img');
+
+    if (event.deltaY < 0) {
+      // 如果向上滚动，增大宽度
+      zoomWidth += 10;
+    } else {
+      // 如果向下滚动，减小宽度
+      zoomWidth -= 10;
+    }
+    
+    // 防止大于100
+    if(zoomWidth > 100){
+      zoomWidth = 100;
+    }
+    // 防止缩小没了
+    if(zoomWidth <= 0){
+      zoomWidth = 10;
+    }
+  
+    // 设置新的宽度
+    images.forEach(function(image) {
+      image.style.width = zoomWidth + '%';
+    });
+  }, {passive: false} );
+</script>
+{% endblock %}
