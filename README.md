@@ -1,5 +1,7 @@
 # Team BJYUAN-CHINA 2023 Wiki
 
+>> https://2023.igem.wiki/bjyuan-china/index.html <<
+
 This repository contains **all** codes of our team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
 Images, photos, icons and fonts are stored on `static.igem.wiki` using [uploads.igem.org](https://uploads.igem.org), and Videos are embedded from [iGEM Video Universe](https://video.igem.org).
