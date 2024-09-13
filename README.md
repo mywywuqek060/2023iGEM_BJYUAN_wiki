@@ -1,5 +1,7 @@
 # Team BJYUAN-CHINA 2023 Wiki
 
+Welcome! View our website at:
+
 https://2023.igem.wiki/bjyuan-china/index.html
 
 This repository contains **all** codes of our team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
